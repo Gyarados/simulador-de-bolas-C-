@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1563321616 source:c:\users\gabri\documents\projetos de sfml (codeblocks)\simulador\bola.cpp
+1563932751 source:c:\users\gabri\documents\projetos de sfml (codeblocks)\simulador\bola.cpp
 	"include/bola.h"
 	<iostream>
 
@@ -415,7 +415,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1563322141 source:c:\users\gabri\documents\projetos de sfml (codeblocks)\simulador\main.cpp
+1563932751 source:c:\users\gabri\documents\projetos de sfml (codeblocks)\simulador\main.cpp
 	<iostream>
 	<SFML/Graphics.hpp>
 	"include/bola.h"
@@ -425,7 +425,7 @@
 	<vector>
 	"bola.h"
 
-1563328705 source:c:\users\gabri\documents\projetos de sfml (codeblocks)\simulador\quadro.cpp
+1563932751 source:c:\users\gabri\documents\projetos de sfml (codeblocks)\simulador\quadro.cpp
 	"include/quadro.h"
 	<iostream>
 

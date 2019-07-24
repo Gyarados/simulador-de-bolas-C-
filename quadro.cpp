@@ -22,11 +22,7 @@ void Quadro::draw(sf::RenderTarget& target, sf::RenderStates states) const{
     for (int i = 0; i < quantBolas; i++){
 
         target.draw(*arrayBolas[i]);
-
-
     }
-
-
 }
 
 
@@ -46,16 +42,9 @@ void Quadro::adicionarBola(Bola* bola){
 
 void Quadro::updatePos(){
 
-    //float deslocV = (tempo.asSeconds()*tempo.asSeconds()*5);
-
-    //cout << "deslocV: " << deslocV << endl;
-
     for(int i = 0; i < quantBolas; i++){
 
         arrayBolas[i]->updateTime();
-
-        //itBolas->getCirculo().setPosition(arrayBolas[i]->getCirculo().getPosition().x , arrayBolas[i]->getCirculo().getPosition().y + deslocV);
-        cout << "coord y das bola: " << arrayBolas[i]->getCirculo().getPosition().y << endl;
 
     }
 }
