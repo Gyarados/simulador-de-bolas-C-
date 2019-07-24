@@ -37,7 +37,6 @@ void Bola::updateTime(){
     float deslocV = (tempo.asSeconds()*tempo.asSeconds()*5);
     circulo.setPosition(circulo.getPosition().x , circulo.getPosition().y + deslocV);
 
-
 }
 
 

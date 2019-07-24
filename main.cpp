@@ -16,9 +16,7 @@ int main()
     sf::Vector2i vetor_window(-8, 0);
     window.setPosition(vetor_window);
 
-    Bola shape(30, 0, 0, sf::Color::Blue);
-    //Bola tempshape(35, shape.getCirculo().getPosition().x, shape.getCirculo().getPosition().y, sf::Color::Red);
-    //Bola* pshape = &tempshape;
+    Bola bolaMouse(30, 0, 0, sf::Color::Blue);
 
     Bola bola1(30, 200, 200, sf::Color::Magenta);
     Bola* pbola1 = &bola1;
@@ -47,8 +45,6 @@ int main()
 
     quadro.adicionarBola(pbola3);
 
-    //quadro.adicionarBola(pshape);
-
     while (window.isOpen())
     {
         window.clear(sf::Color::White);
@@ -60,21 +56,14 @@ int main()
 
             if (event.type == sf::Event::MouseButtonPressed){
 
-                Bola* pshape = new Bola(30, shape.getCirculo().getPosition().x, shape.getCirculo().getPosition().y, sf::Color::Blue);
-                //Bola* pshape = &tempshape;
-                quadro.adicionarBola(pshape);
+                Bola* pBolaMouse = new Bola(30, bolaMouse.getCirculo().getPosition().x, bolaMouse.getCirculo().getPosition().y, sf::Color::Blue);
+                quadro.adicionarBola(pBolaMouse);
 
             }
         }
 
-
-
-        //sf::Time tempo = clock.getElapsedTime();
-
-        //cout << tempo.asSeconds() << endl;
-
-        shape.setPosition(sf::Mouse::getPosition(window).x-10, sf::Mouse::getPosition(window).y-10);
-        window.draw(shape);
+        bolaMouse.setPosition(sf::Mouse::getPosition(window).x-10, sf::Mouse::getPosition(window).y-10);
+        window.draw(bolaMouse);
         quadro.updatePos();
         window.draw(quadro);
 
